@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Table and Column Extractor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SQL Table and Column Extractor</h1>
+        <textarea id="sql-input" placeholder="Enter your SQL query here"></textarea>
+        <button id="extract-tables" class="btn">Extract</button>
+        <!-- <button id="extract-columns" class="btn">Extract Columns</button> -->
+        <div id="results">
+            <h2>Results</h2>
+            <div class="result-section">
+                <p><strong>Tables:</strong> <span id="tables"></span></p>
+            </div>
+            <div class="result-section">
+                <p><strong>Columns:</strong> <span id="columns"></span></p>
+            </div>
+        </div>
+        <footer>
+            <p>Developed by <strong>Akash Singh</strong></p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
